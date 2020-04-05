@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dax-nG-Mhe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uPd-fU-JTK">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -8,10 +8,18 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--On Boarding View Controller-->
+        <scene sceneID="fMT-Q9-Cyb">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Fhd-hj-PiU" customClass="OnBoardingViewController" customModule="PlatziFinanzas" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gjm-sW-tRr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-738" y="158"/>
+        </scene>
+        <!--On Boarding Steps View Controller-->
         <scene sceneID="quA-g8-D4N">
             <objects>
-                <viewController id="dax-nG-Mhe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnBoardingSteps" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dax-nG-Mhe" customClass="OnBoardingStepsViewController" customModule="PlatziFinanzas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WRb-uc-EPz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,15 +57,106 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="e9z-FA-xGV"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="bFy-P3-dsR" id="JSz-WS-L7W"/>
+                        <outlet property="onBoardingImage" destination="eTq-8z-PTe" id="uOn-w4-6d5"/>
+                        <outlet property="titleLabel" destination="1uZ-4u-PZf" id="3nb-y9-EUM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QQp-5b-l6J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-232" y="63"/>
+            <point key="canvasLocation" x="366" y="63"/>
+        </scene>
+        <!--On Boarding Container View Controller-->
+        <scene sceneID="WCl-tS-Wxn">
+            <objects>
+                <viewController id="uPd-fU-JTK" customClass="OnBoardingContainerViewController" customModule="PlatziFinanzas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rfL-QI-WAc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTd-JT-fTg" customClass="on" customModule="PlatziFinanzas" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <segue destination="Fhd-hj-PiU" kind="embed" identifier="openOnBoarding" id="Qdm-jE-e5V"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBZ-Gi-d1Z">
+                                <rect key="frame" x="20" y="602" width="335" height="45"/>
+                                <color key="backgroundColor" name="GreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="nNS-05-3lE"/>
+                                </constraints>
+                                <state key="normal" title="Iniciar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderUIColor">
+                                        <color key="value" name="GreenShadow"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="yPj-6m-ix5" kind="presentation" identifier="SignIn" id="5u5-by-1rq"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="aP0-TC-3eU">
+                                <rect key="frame" x="168" y="557" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="IBZ-Gi-d1Z" firstAttribute="leading" secondItem="OYZ-FS-wHJ" secondAttribute="leading" constant="20" id="2jB-29-joo"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="CTd-JT-fTg" secondAttribute="bottom" id="2vN-7g-zf9"/>
+                            <constraint firstItem="CTd-JT-fTg" firstAttribute="top" secondItem="rfL-QI-WAc" secondAttribute="topMargin" id="9ZQ-ht-RBk"/>
+                            <constraint firstItem="aP0-TC-3eU" firstAttribute="centerX" secondItem="rfL-QI-WAc" secondAttribute="centerX" id="EIJ-DB-QEa"/>
+                            <constraint firstItem="OYZ-FS-wHJ" firstAttribute="trailing" secondItem="CTd-JT-fTg" secondAttribute="trailing" id="Lt9-mX-UP7"/>
+                            <constraint firstItem="OYZ-FS-wHJ" firstAttribute="bottom" secondItem="IBZ-Gi-d1Z" secondAttribute="bottom" constant="20" id="Ty4-8D-O10"/>
+                            <constraint firstItem="OYZ-FS-wHJ" firstAttribute="trailing" secondItem="IBZ-Gi-d1Z" secondAttribute="trailing" constant="20" id="guk-2P-bT5"/>
+                            <constraint firstItem="IBZ-Gi-d1Z" firstAttribute="top" secondItem="aP0-TC-3eU" secondAttribute="bottom" constant="8" id="pP3-Tv-CQb"/>
+                            <constraint firstItem="CTd-JT-fTg" firstAttribute="leading" secondItem="OYZ-FS-wHJ" secondAttribute="leading" id="zTZ-Zl-kiX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OYZ-FS-wHJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="aP0-TC-3eU" id="alV-JP-i3t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lz2-LM-Z4D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1857" y="63"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="JX5-we-fXE">
+            <objects>
+                <viewControllerPlaceholder id="yPj-6m-ix5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1k4-6S-vh3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nba-Z1-bdx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1871" y="515"/>
         </scene>
     </scenes>
     <resources>
         <namedColor name="GrayColor">
             <color red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GreenColor">
+            <color red="0.62352941176470589" green="0.74117647058823533" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GreenShadow">
+            <color red="0.31764705882352939" green="0.39215686274509803" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
