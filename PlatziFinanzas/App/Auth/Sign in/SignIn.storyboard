@@ -152,7 +152,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="45" id="ojt-fo-ABT"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button">
+                                                        <state key="normal" title="Sign In">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -170,6 +170,9 @@
                                                                 <color key="value" name="GreenShadow"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="iaf-bg-am2" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="PPj-je-87E"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -232,6 +235,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0zx-xn-Skb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="92.753623188405811" y="87.053571428571431"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="vUJ-95-u4J">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="iaf-bg-am2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Yp-4X-hrQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="87"/>
         </scene>
     </scenes>
     <resources>

@@ -31,14 +31,14 @@
                                     <constraint firstAttribute="width" constant="200" id="dW8-69-05B"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uZ-4u-PZf">
-                                <rect key="frame" x="20" y="353.5" width="335" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uZ-4u-PZf">
+                                <rect key="frame" x="20" y="353.5" width="335" height="49.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="36"/>
                                 <color key="textColor" red="0.62352941179999999" green="0.74117647060000003" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFy-P3-dsR">
-                                <rect key="frame" x="20" y="411.5" width="335" height="23.5"/>
+                                <rect key="frame" x="20" y="411" width="335" height="23.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" name="GrayColor"/>
                                 <nil key="highlightedColor"/>
@@ -106,7 +106,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="yPj-6m-ix5" kind="presentation" identifier="SignIn" id="5u5-by-1rq"/>
+                                    <segue destination="yPj-6m-ix5" kind="presentation" identifier="SignIn" modalPresentationStyle="currentContext" id="5u5-by-1rq"/>
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="aP0-TC-3eU">
@@ -137,10 +137,10 @@
             </objects>
             <point key="canvasLocation" x="-1857" y="63"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--SignIn-->
         <scene sceneID="JX5-we-fXE">
             <objects>
-                <viewControllerPlaceholder id="yPj-6m-ix5" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="SignIn" id="yPj-6m-ix5" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="1k4-6S-vh3"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nba-Z1-bdx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

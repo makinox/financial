@@ -25,6 +25,8 @@
 		E9A25ED6243A6CB30028F4E9 /* OnBoardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A25ED5243A6CB30028F4E9 /* OnBoardingContainerViewController.swift */; };
 		E9A25ED8243A71790028F4E9 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A25ED7243A71790028F4E9 /* OnBoardingViewController.swift */; };
 		E9A25EDA243A7AA60028F4E9 /* OnBoardingStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A25ED9243A7AA60028F4E9 /* OnBoardingStepsViewController.swift */; };
+		E9BF9D08243F795B00923F48 /* EmptyState.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BF9D07243F795B00923F48 /* EmptyState.xib */; };
+		E9E5DF65243E70B200490C80 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E5DF64243E70B200490C80 /* TransactionsViewController.swift */; };
 		E9EA5B4624394CAF004D4083 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9EA5B4524394CAF004D4083 /* OnBoarding.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		E9A25ED5243A6CB30028F4E9 /* OnBoardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContainerViewController.swift; sourceTree = "<group>"; };
 		E9A25ED7243A71790028F4E9 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		E9A25ED9243A7AA60028F4E9 /* OnBoardingStepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingStepsViewController.swift; sourceTree = "<group>"; };
+		E9BF9D07243F795B00923F48 /* EmptyState.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyState.xib; sourceTree = "<group>"; };
+		E9E5DF64243E70B200490C80 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		E9EA5B4524394CAF004D4083 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -230,6 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				E91786452433906B001C791F /* Transactions.storyboard */,
+				E9E5DF64243E70B200490C80 /* TransactionsViewController.swift */,
+				E9BF9D07243F795B00923F48 /* EmptyState.xib */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -293,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E97EC00B2432A2C300D0F532 /* LaunchScreen.storyboard in Resources */,
+				E9BF9D08243F795B00923F48 /* EmptyState.xib in Resources */,
 				E98683AF2432E4E200CB08E7 /* Default-568h@2x.png in Resources */,
 				E9277C9E2435756F005AA669 /* Colors.xcassets in Resources */,
 				E917864E2433916F001C791F /* Profile.storyboard in Resources */,
@@ -320,6 +327,7 @@
 				E9A25ED8243A71790028F4E9 /* OnBoardingViewController.swift in Sources */,
 				E9A25EDA243A7AA60028F4E9 /* OnBoardingStepsViewController.swift in Sources */,
 				E97EC0012432A2C200D0F532 /* SceneDelegate.swift in Sources */,
+				E9E5DF65243E70B200490C80 /* TransactionsViewController.swift in Sources */,
 				E9A25ED6243A6CB30028F4E9 /* OnBoardingContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
