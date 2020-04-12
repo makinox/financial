@@ -15,9 +15,9 @@
 		E9230CE52433CBCE0020C1CA /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9230CE42433CBCE0020C1CA /* SignIn.storyboard */; };
 		E9277C9E2435756F005AA669 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9277C9D2435756F005AA669 /* Colors.xcassets */; };
 		E9277CA124358338005AA669 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9277CA024358338005AA669 /* Shadow.swift */; };
+		E93EEF422440FCCC003E8DAC /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93EEF412440FCCC003E8DAC /* TabBarViewController.swift */; };
 		E97EBFFF2432A2C200D0F532 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97EBFFE2432A2C200D0F532 /* AppDelegate.swift */; };
 		E97EC0012432A2C200D0F532 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97EC0002432A2C200D0F532 /* SceneDelegate.swift */; };
-		E97EC0032432A2C200D0F532 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97EC0022432A2C200D0F532 /* ViewController.swift */; };
 		E97EC0062432A2C200D0F532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E97EC0042432A2C200D0F532 /* Main.storyboard */; };
 		E97EC0082432A2C300D0F532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E97EC0072432A2C300D0F532 /* Assets.xcassets */; };
 		E97EC00B2432A2C300D0F532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E97EC0092432A2C300D0F532 /* LaunchScreen.storyboard */; };
@@ -39,10 +39,10 @@
 		E9230CE42433CBCE0020C1CA /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		E9277C9D2435756F005AA669 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		E9277CA024358338005AA669 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		E93EEF412440FCCC003E8DAC /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		E97EBFFB2432A2C100D0F532 /* PlatziFinanzas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlatziFinanzas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97EBFFE2432A2C200D0F532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E97EC0002432A2C200D0F532 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E97EC0022432A2C200D0F532 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E97EC0052432A2C200D0F532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E97EC0072432A2C300D0F532 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E97EC00A2432A2C300D0F532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -209,7 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				E97EC0042432A2C200D0F532 /* Main.storyboard */,
-				E97EC0022432A2C200D0F532 /* ViewController.swift */,
+				E93EEF412440FCCC003E8DAC /* TabBarViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -321,7 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E97EC0032432A2C200D0F532 /* ViewController.swift in Sources */,
+				E93EEF422440FCCC003E8DAC /* TabBarViewController.swift in Sources */,
 				E9277CA124358338005AA669 /* Shadow.swift in Sources */,
 				E97EBFFF2432A2C200D0F532 /* AppDelegate.swift in Sources */,
 				E9A25ED8243A71790028F4E9 /* OnBoardingViewController.swift in Sources */,
@@ -412,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -466,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -483,7 +483,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZTL6Q3DWYF;
 				INFOPLIST_FILE = PlatziFinanzas/Base/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -502,7 +502,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZTL6Q3DWYF;
 				INFOPLIST_FILE = PlatziFinanzas/Base/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

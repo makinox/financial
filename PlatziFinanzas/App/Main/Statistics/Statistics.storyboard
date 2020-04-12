@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8m3-Nb-0Z9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,12 +13,14 @@
             <objects>
                 <viewController id="x8E-dC-Yoq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8mn-lN-sni">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="5Id-vD-SoR"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="TabBarStats" id="3zF-GB-Nxt"/>
                     <navigationItem key="navigationItem" title="Statistics" id="NBO-1f-kDS"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dP4-is-yyu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,4 +46,7 @@
             <point key="canvasLocation" x="133.33333333333334" y="934.82142857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TabBarStats" width="17" height="18"/>
+    </resources>
 </document>

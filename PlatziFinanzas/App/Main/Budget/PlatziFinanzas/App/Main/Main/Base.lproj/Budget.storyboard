@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QoG-oO-Xvb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,12 +13,14 @@
             <objects>
                 <viewController id="I8P-8M-tnF" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M5y-zT-Slh">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="dui-cz-xp2"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="TabBarBudget" id="90N-h2-hvN"/>
                     <navigationItem key="navigationItem" title="Budget" id="FEO-qF-d93"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t47-Qd-BON" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,4 +46,7 @@
             <point key="canvasLocation" x="1053.6231884057972" y="854.46428571428567"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TabBarBudget" width="20" height="26"/>
+    </resources>
 </document>
