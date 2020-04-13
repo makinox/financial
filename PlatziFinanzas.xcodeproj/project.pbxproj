@@ -22,6 +22,8 @@
 		E97EC0082432A2C300D0F532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E97EC0072432A2C300D0F532 /* Assets.xcassets */; };
 		E97EC00B2432A2C300D0F532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E97EC0092432A2C300D0F532 /* LaunchScreen.storyboard */; };
 		E98683AF2432E4E200CB08E7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E98683AE2432E4E200CB08E7 /* Default-568h@2x.png */; };
+		E9A05E6A2443B4D100840CE9 /* TransactionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9A05E692443B4D100840CE9 /* TransactionsCell.xib */; };
+		E9A05E6C2443B86600840CE9 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A05E6B2443B86600840CE9 /* BudgetViewController.swift */; };
 		E9A25ED6243A6CB30028F4E9 /* OnBoardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A25ED5243A6CB30028F4E9 /* OnBoardingContainerViewController.swift */; };
 		E9A25ED8243A71790028F4E9 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A25ED7243A71790028F4E9 /* OnBoardingViewController.swift */; };
 		E9A25EDA243A7AA60028F4E9 /* OnBoardingStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A25ED9243A7AA60028F4E9 /* OnBoardingStepsViewController.swift */; };
@@ -48,6 +50,8 @@
 		E97EC00A2432A2C300D0F532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E97EC00C2432A2C300D0F532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E98683AE2432E4E200CB08E7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E9A05E692443B4D100840CE9 /* TransactionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionsCell.xib; sourceTree = "<group>"; };
+		E9A05E6B2443B86600840CE9 /* BudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
 		E9A25ED5243A6CB30028F4E9 /* OnBoardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContainerViewController.swift; sourceTree = "<group>"; };
 		E9A25ED7243A71790028F4E9 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		E9A25ED9243A7AA60028F4E9 /* OnBoardingStepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingStepsViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				E91786482433910A001C791F /* Budget.storyboard */,
+				E9A05E6B2443B86600840CE9 /* BudgetViewController.swift */,
 			);
 			path = Budget;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 				E91786452433906B001C791F /* Transactions.storyboard */,
 				E9E5DF64243E70B200490C80 /* TransactionsViewController.swift */,
 				E9BF9D07243F795B00923F48 /* EmptyState.xib */,
+				E9A05E692443B4D100840CE9 /* TransactionsCell.xib */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 				E9277C9E2435756F005AA669 /* Colors.xcassets in Resources */,
 				E917864E2433916F001C791F /* Profile.storyboard in Resources */,
 				E917864C24339143001C791F /* Add.storyboard in Resources */,
+				E9A05E6A2443B4D100840CE9 /* TransactionsCell.xib in Resources */,
 				E97EC0082432A2C300D0F532 /* Assets.xcassets in Resources */,
 				E97EC0062432A2C200D0F532 /* Main.storyboard in Resources */,
 				E9230CE52433CBCE0020C1CA /* SignIn.storyboard in Resources */,
@@ -325,6 +332,7 @@
 				E9277CA124358338005AA669 /* Shadow.swift in Sources */,
 				E97EBFFF2432A2C200D0F532 /* AppDelegate.swift in Sources */,
 				E9A25ED8243A71790028F4E9 /* OnBoardingViewController.swift in Sources */,
+				E9A05E6C2443B86600840CE9 /* BudgetViewController.swift in Sources */,
 				E9A25EDA243A7AA60028F4E9 /* OnBoardingStepsViewController.swift in Sources */,
 				E97EC0012432A2C200D0F532 /* SceneDelegate.swift in Sources */,
 				E9E5DF65243E70B200490C80 /* TransactionsViewController.swift in Sources */,

@@ -20,19 +20,13 @@ class TransactionsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Transactions"
-//        tableView.delegate = self
-//        tableView.dataSource = self
+//        self.navigationItem.title = "Transactions"
+        
+        let cell = UINib(nibName: "TransactionsCell", bundle: Bundle.main)
+        tableView.register(cell, forCellReuseIdentifier: "cell")
 
     }
     
-//    override var preferredStatusBarStyle: UIStatusBarStyle {
-//        return .lightContent
-//    }
-//    
-//    override func viewDidAppear(_ animated: Bool) {
-//        navigationController?.navigationBar.barStyle = .black
-//    }
 }
 
 extension TransactionsViewController: UITableViewDelegate {
@@ -41,7 +35,7 @@ extension TransactionsViewController: UITableViewDelegate {
 
 extension TransactionsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let count = 0
+        let count = 10
 //        tableView.backgroundView = (count == 0) ? emptyStateView : nil
         if (count == 0) {
             tableView.backgroundView = emptyStateView
