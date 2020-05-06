@@ -7,4 +7,4 @@ Used:
 - Storyboards
 - Pod
 
-![Image of trips](./readme/screen.jpg)
+![Image of trips](./readme/screen.png)
